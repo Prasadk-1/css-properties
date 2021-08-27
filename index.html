@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple selection</title>
+    <style>
+        #sp{
+           color:red;
+
+        }
+        .form{
+            padding: 10px;
+        }
+                fieldset {
+        background-color: #eeeeee;
+        }
+
+        legend {
+        background-color: gray;
+        color: white;
+        padding: 5px 10px;
+        }
+
+        input {
+        margin: 5px;
+        }
+
+            .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            margin-left: 0px;
+            
+            }
+
+            .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+
+            .navbar a:hover {
+            background: #ddd;
+            color: black;
+            }
+            h1{
+                
+                margin-top: 50px;
+                border:1px solid red;
+            }
+            body{
+                margin-left: 0px;
+            }
+
+    </style>
+</head>    
+<body>
+
+<h1>Choose Option</h1>
+
+<p>The multiple attribute specifies that multiple options can be selected at once:</p>
+<form>
+<!-- <form action="/action_page.php"> -->
+  <label for="cars">Choose a car:</label>
+  <select multiple>
+    <option value="volvo">Volvo</option>
+    <option value="Tata">Tata</option>
+    <option value="BMW">BMW</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<form action="/action_page.php">
+<div >
+    <div class="form">
+    <input type="text" required  placeholder="enter your name"  >
+    <span id="sp">*</span>
+    </div>
+    <div class="form">
+    <input type="email" required placeholder="enter your mail-id">
+    <span id="sp">*</span>
+    </div>
+    <div class="form">
+    <input type="mobile" required placeholder="enter your contact number">
+    <span id="sp">*</span>
+    </div>
+<div>
+    <button>Submit</button>
+</div>
+
+
+</div>
+</form>
+<form action="/action_page.php">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday"><br><br>
+      <input type="submit" value="Submit">
+    </fieldset>
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </div>
+  
+      
+
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+    <style>
+         .main{
+            display: flex;
+            list-style:none
+            
+        }
+        h1 {
+            color: rgba(241, 67, 14, 0.945);
+            border: 10px;
+            text-align: left;
+            height: 25%;
+        }
+
+
+        p {
+            text-align: left;
+            color: blue;
+            font-size: 15px;
+            height: 25%;
+            margin: auto;
+            padding: 20px;
+
+        }
+
+        img {
+           
+            position: right;
+            object-fit: cover;
+            height: 100%;
+            width: 50%;
+            /* padding: 10px; */
+            /* margin: 5px 5px 5px 5px; */
+            float: right;
+            /* overflow: hidden; */
+
+
+        }
+
+        #div {
+            background-color: rgb(252, 253, 253);
+            width: fit-content;
+            height:  250px;
+            margin: 5px 5px 5px 5px;
+            border: 5px solid rgba(28, 34, 117, 0.719);
+            text-align: center;
+            
+
+        }
+       
+       
+    </style>
+
+</head>
+
+<body>
+    <div id="div">
+        <img id="image" src="https://st.depositphotos.com/1001201/3013/i/950/depositphotos_30132711-stock-photo-creative-business-idea.jpg" alt="PhonePe image">
+        <h2> Get insights that helps your business grow. </h2>
+        <p>
+            <b>If you can get your customers to not just like your product, but also trust your brand, you have won yourself, loyal customers.
+                <br>Get Innovative ideas from us to improve your bussiness, and get best results. 
+                <br>
+            </b>
+       <ul>
+            <li color=brown>10k+ Satisfied Customers</li>
+            <li color=brown>12M+ admissions</li>
+       </ul>
+    </div>
+</body>
+
+</html> -->
